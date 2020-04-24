@@ -1,1 +1,145 @@
-Hello world!
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>18 anys confinats</title>
+  </head>
+  <body>
+<div>
+<h4>In the shallow.</h4>
+<div class="alert alert-secondary">
+Aquesta canço l'associo a 3 persones. Dos a duo i una sola.
+<input data-resposta="Paula">
+</div>
+<h4>Izal</h4>
+<div class="alert alert-secondary">
+Dos vegades els hem vist. Pero només en una alguna cosa va passar per entre les cames.
+<input data-resposta="Gat">
+</div>
+<h4>Cayetano</h4>
+<div class="alert alert-secondary">
+Todas mis amigas, se llaman
+<input data-resposta="Rosamari">
+</div>
+<h4>Madness</h4>
+<div class="alert alert-secondary">
+Algú es va fer un fart de ballar...
+<input data-resposta="Anabel">
+</div>
+<h4>El del loosers saloon</h4>
+<div class="alert alert-secondary">
+Recordes on varem veure aquest?
+<input data-resposta="Polvori">
+</div>
+<h4>We are little zombies</h4>
+<div class="alert alert-secondary">
+Sé que recordes perfectament on varem veure aquesta película, pero, concreta una mica més.
+<input data-resposta="Prado">
+</div>
+<h4>Raquel Lua</h4>
+<div class="alert alert-secondary">
+Ja se qe la varem veure al festival dels indies, pero aixo ja està pillat. Aixi que després varem anar tots a prendre algo a...
+<input data-resposta="Parlament">
+</div>
+<h4>Love of lesbian</h4>
+<div class="alert alert-secondary">
+Ultimament els seus concerts sempre els hem vist amb la mateixa postura
+<input data-resposta="Asseguts">
+</div>
+<h4>Bienquerida</h4>
+<div class="alert alert-secondary">
+No hi anirem més perque abans que de la musica es preocupa del seu
+<input data-resposta="Vestit">
+</div>
+<h4>Mina</h4>
+<div class="alert alert-secondary">
+A part de Barruera, també la varem posar en un altre lloc que comença per B i no es Banyoles
+<input data-resposta="Barraca">
+</div>
+<h4>versions</h4>
+<div class="alert alert-secondary">
+El millor del cap d’any va ser la llista, perque al final poca festa i massa...
+<input data-resposta="Cachitos">
+</div>
+<h4>tecnobrass</h4>
+<div class="alert alert-secondary">
+Un ratet després de passejar amb aquesta música, vas sentir una veu dolça i avellutada
+<input data-resposta="Sandra">
+</div>
+<h4>Mercè</h4>
+<div class="alert alert-secondary">
+Al final no calia anar a Granada quan ja tenies pràcticament el mateix concert gratis al
+<input data-resposta="Bogatell">
+</div>
+<h4>Yesterday</h4>
+<div class="alert alert-secondary">
+Aquell dia fallava algo al cine, pero no recordo que era...
+<input data-resposta="Aire">
+</div>
+<h4>Fam 31. Valentina</h4>
+<div class="alert alert-secondary">
+Aquests nois podrien ser els nostres fills. I algú ens va donar la raó
+<input data-resposta="Guillem">
+</div>
+<h4>Salvese quien pueda</h4>
+<div class="alert alert-secondary">
+Ja se que aquesta no la van tocar al concert, pero es que encada queda pendent.
+<input data-resposta="Video">
+</div>
+<h4>Viva Suecia</h4>
+<div class="alert alert-secondary">
+Hi ha un neologisme que defineix perfectament els assistents al concert <input data-resposta="Calvuts">
+</div>
+<h4>Danceteria</h4>
+<div class="alert alert-secondary">
+</div>
+<h4>Sports team</h4>
+<div class="alert alert-secondary">
+Aquest home va acabar segur amb mal de 
+<input data-resposta="Braços">
+</div>
+<h4>Ferran Palau</h4>
+<div class="alert alert-secondary">
+Podem dir ja que es la cançó oficial del
+<input data-resposta="Confinament">
+</div>
+<h4>Tiersen</h4>
+<div class="alert alert-secondary">
+Aquesta cançó que encara és més trista que l'orginal està posseida per l'esperit de la 
+<input data-resposta="Boira">
+</div>
+<h4>Pau vallvé</h4>
+<div class="alert alert-secondary">
+Està molt be aixo que un artista que fa musica trista et digui que farà un concert de ...
+<input data-resposta="Bajon">
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+$( document ).ready(function() {
+    $("input").blur(function(){
+	console.log($(this).data("resposta"))
+	console.log($(this).val())
+	if ($(this).data("resposta")==$(this).val()) {
+	    console.log("ok")
+	    $(this).parent().addClass("alert-success")
+	} else {
+	    console.log("no")
+	    $(this).parent().removeClass("alert-success")
+	}
+    });
+});
+</script>
+
+  </body>
+</html>
