@@ -190,6 +190,12 @@ $(document).ready(function() {
     $("input").each(function(){
 	ilumina($(this));
     });
+    if (location.href.indexOf("respostes")!=-1) {
+      $("input").each(function(){
+  	  $(this).val($(this).data("resposta"));
+          $(this).parent().addClass("alert-success");
+      });
+    }
 });
 </script>
 
