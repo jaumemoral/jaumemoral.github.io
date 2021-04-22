@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>18 anys junts confinats</title>
+    <style>
+	h4 {display:none}
+        .alert-success h4 {display:block !important}
+    </style>
+  </head>
+  <body>
+<div>
+
+<div class="container">
+<div class="text-center">
+<br>
+<a href="https://open.spotify.com/playlist/1v6mbJ8l6uE9jnqr1agKcc?si=d5c5c99ead6542a6">
+<img class="img-fluid" src="img/19.png">
+</a>
+</div>
+<br><br>
+Abans de res, si piques a la imatge aniràs a la llista del Spotify. Ja la tens? vale, comencem!
+<br><br>
+Per resoldre aquest joc, hauràs d'omplir els forats amb una paraula. Quan vagis escrivint, si es posa en groc es que vas bé, si està vermell... malament.
+Quan l'encertis, podràs veure a quina cançó correspon la frase, que no te perque seguir l'ordre de la playlist.
+<br><br><br>
+<div class="alert alert-secondary">
+<h4>Sidonie – Mi vida es la música</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Rozalén – Que no, que no</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Viva Suecia – Días Amables</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Enric Montefusco – Todo para todos</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Xavier Baró – Per les aigües de Dublin</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Ferran Palau – Reflexe</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Rigoberta Bandini – Too Many Drugs</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>El Petit de Cal Eril – Close To Me</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>La la love you – El fin del mundo</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Max Ritcher – Vivaldi recomposed. Primavera</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>M83 - Outro</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Vàlius - Espinàs </h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Pau Vallvé - Com troncs baixant pel riu</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Bruno Mars – Marry You</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Love of lesbian - Planeador</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Camellos – Arroz con cosas</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Raquel Lua – ¿Para qué más?</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Vetusta Morla – Los abrazos prohibidos</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Andrea Motis – Sombra de Là</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+<div class="alert alert-secondary">
+	<h4>Ginebras – Cosas Moradas</h4>
+xxx
+<input data-resposta="yyy">
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+function ilumina(x) {
+        x.parent().removeClass("alert-success")
+        x.parent().removeClass("alert-danger")
+        x.parent().removeClass("alert-warning")
+        x.parent().addClass("alert-primary")
+        resposta=x.data("resposta").toLowerCase()
+        entrada=x.val().toLowerCase()
+        if (resposta==entrada) {
+            x.parent().addClass("alert-success")
+            x.val(x.data("resposta"));
+        } else if (entrada.length>0 && resposta.substr(0,entrada.length)==entrada) {
+            x.parent().addClass("alert-warning")
+        } else if (entrada.length==0) {
+            x.parent().addClass("alert-primary")
+        } else {
+            x.parent().addClass("alert-danger")
+        }
+
+}
+$(document).ready(function() {
+    $("input").keyup(function(){
+	ilumina($(this))
+    });
+    $("input").each(function(){
+	ilumina($(this));
+    });
+    if (location.href.indexOf("respostes")!=-1) {
+      $("input").each(function(){
+  	  $(this).val($(this).data("resposta"));
+          $(this).parent().addClass("alert-success");
+      });
+    }
+});
+</script>
+
+  </body>
+</html>
+
